@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication Table</title>
+    </head>
+
+    <body>
+        <h1>Multiplication Table</h1>
+        <script>
+
+            function criandoTabela(n) { // Substitua "nomeDaSuaFuncao" por um nome mais apropriado
+                // escreve a coluna inicial
+                let x = [];
+                for (let i = 0; i <= n; i++) {
+                    x[i] = [];
+                    for (let j = 0; j<=n; j++) {
+                        x[i].push(j*i)
+                    }
+                }
+                console.table(x)
+                // TODO: escrever dois loops aninhados para desenhar o array bidimencional e monstar o restante da tabela no console.
+            }
+        </script>
+    </body>
+</html>
